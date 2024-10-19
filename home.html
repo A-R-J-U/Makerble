@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e1cc815685.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/assets/nav.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Makerble</title>
 </head>
 <body>
-    
+
+    <section class="Navbar">
+
+        <nav id="mobile">
+
+            <div class="left">
+                <div class="logo">
+                    <img src="/logo.png" alt="logo" width="47px" >
+                </div>
+            </div>
+            
+            <div class="right">
+
+                <div class="profile">
+                    <div class="pro"> <img src="/assets/profile.jpg" alt="DP" width="40px" class="dropbtn"><i class="fa-solid fa-caret-down"></i> </div>
+                    <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home"><i class="fa-regular fa-envelope"></i> Messages</a>
+                            <a href="#home"><i class="fa-solid fa-bell"></i> Notifications</a>
+                            <a href="#home"><i class="fa-solid fa-bolt-lightning"></i> Energy</a>
+                            <a href="#" class="myButton">★ Upgrade</a>
+                            <a href="#" class="btn_crt">Create</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <header>
+                    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+                </header>
+                
+                <nav id="mobileNav" class="mobile-nav">
+                    <ul>
+                        <div class="search-container">
+                            <input type="text" class="search-bar" placeholder="Search..." id="searchInput">
+                            <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">My Apps <i class="fa-solid fa-caret-down"></i> </a></li>
+                    </ul>
+                </nav>
+            
+                <div class="overlay" id="overlay"></div>
+            </div>
+
+        </nav>
+
+    </section>
+
+
+    <script src="home.js"></script>
 </body>
 </html>
