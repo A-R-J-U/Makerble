@@ -32,6 +32,7 @@ window.onclick = function(event) {
     }
 }
 
+
 const likeButtons = document.querySelectorAll('.like-button');
 
 likeButtons.forEach(button => {
