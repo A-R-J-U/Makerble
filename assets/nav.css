@@ -4,7 +4,7 @@
 }
 
 #mobile{
-    height: 75px;
+    height: 65px;
     padding: 3%;
     display: flex;
     align-items: center;
@@ -15,6 +15,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 
 .left{
@@ -27,6 +28,11 @@
 }
 
 .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
     height: 100%;
     object-fit: cover;
 }
@@ -248,7 +254,12 @@ header {
 @media (min-width: 640px) {} 
 
 /* md */
-@media (min-width: 768px) {} 
+@media (min-width: 768px) {
+    .logo{
+        font-size: 16px;
+        gap: 7px;
+    }
+} 
 
 /* lg */
 @media (min-width: 1024px) {} 
